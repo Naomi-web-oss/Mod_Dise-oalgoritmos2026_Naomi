@@ -39,7 +39,7 @@ int main(void){//Esta función no recibe ningún parametro o argumento del siste
     cociente = cociente / 2;
 
 
-    
+
     //Muestra divión 3: 3/2 = 1 residuo 1 b2 = 1.
     b2 = cociente % 2;
 
@@ -54,7 +54,7 @@ int main(void){//Esta función no recibe ningún parametro o argumento del siste
 
      //Muestra el paso de 13 / 2 = 6 residuo 1.
     printf("%2d / 2 = %d residuo %d\n", cociente, cociente / 2, b3);
-
+    cociente = cociente % 2;
 
 
     //RESULTADO: Los residuos se leen de abajo hacia arriba -> 1101
