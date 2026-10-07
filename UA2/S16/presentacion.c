@@ -7,7 +7,7 @@ int main(void){//Inicia la función principal.
     printf("=================================================\n");
     printf(" Instituto Nacional De Aprendizaje\n");
     printf(" Modulo: CSTI12010 Diseño de algoritmos\n");
-    printf(" Unidad 2: Progracion estructurada\n");
+    printf(" Unidad 2: Programacion estructurada\n");
     printf(" \tSesión 16\n"); // \t Muestra texto con sangría.
     printf(" Lenguaje \"C\" | Compilator: gcc\n");//Muestra comillas.
     printf(" \tEstudiante: Naomi Cantillo\n");
