@@ -1,4 +1,4 @@
-// reporte.c - Programa con errores 
+//reporte.c - Programa con errores 
   #include <stdio.h> 
     
   int main(void) { 
