@@ -10,6 +10,7 @@ int main(void){//Inicia la función principal.
     printf(" Unidad 2: Progracion estructurada\n");
     printf(" \tSesión 16\n"); // \t Muestra texto con sangría.
     printf(" Lenguaje \"C\" | Compilator: gcc\n");//Muestra comillas.
+    printf(" \tEstudiante: Naomi Cantillo\n");
     printf("=================================================\n");
 
     return 0;//Termina sin errores.Devuelve 0 al sistema operativo.
