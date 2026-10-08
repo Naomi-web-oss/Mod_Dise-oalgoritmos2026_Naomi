@@ -1,0 +1,8 @@
+// reporte.c - Programa con errores 
+#include <stdio.h> 
+     
+Int main(void) { 
+    printf("Reporte de ventas\n") 
+    Printf("Total: 25000\n"); 
+    printf("Gracias por su compra\n); 
+    return 0;

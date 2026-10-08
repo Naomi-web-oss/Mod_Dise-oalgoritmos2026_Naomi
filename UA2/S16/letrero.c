@@ -3,12 +3,19 @@
 #include <stdio.h>
 
 int main(void){
-    printf("=================================================\n");
-    printf(" MENU DEL DIA - \"SODA LA ESQUINA\"\n");
-    printf(" Platillo\tPrecio\n");
-    printf(" Casado\t3500\n");
-    printf(" Gallo pinto\tP2000\n");
-    printf(" refresco\t1000\n");
-    printf(" Archivo: C:\\INA\\menu.txt\n");
-    printf("=================================================\n");
+    printf(" =============================================== \n");
+    printf("       MENU DEL DIA - \"SODA LA ESQUINA\"        \n");
+    printf(" =============================================== \n");
+    printf("|       Platillo\t|        Precio         |\n");                          
+    printf(" ----------------------------------------------- \n");
+    printf("|                                               |\n");
+    printf("|       Casado\t        |        3500           |\n");
+    printf("|       Gallo pinto\t|        2000           |\n");
+    printf("|       refresco\t|        1000           |\n");
+    printf("|                                               |\n");
+    printf(" ----------------------------------------------- \n");
+    printf("| Archivo: C:\\INA\\menu.txt                      |\n");
+    printf(" =============================================== \n");
+
+    return 0;
 }
