@@ -8,11 +8,11 @@ int main(void){
 
     //Entrada de datos.
     printf("Digite la base del rectangulo (cm): ");
-    scanf("%lf, &base");
+    scanf("%lf", &base);
     
     //Mensaje y lee la altura que va a ser = 3.
-    printf("Digite la base del rectangulo (cm): ");
-    scanf("%lf, &altura");
+    printf("Digite la altura del rectangulo (cm): ");
+    scanf("%lf", &altura);
  
     //Proceso: multiplica y guarda el resultado = 15.
 
