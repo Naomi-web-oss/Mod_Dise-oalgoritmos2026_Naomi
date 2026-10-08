@@ -1,4 +1,4 @@
-//Area.c - saca el area de un rectangulo.
+//area_rectangulo.c - saca el area de un rectangulo.
 
 #include <stdio.h>
 
