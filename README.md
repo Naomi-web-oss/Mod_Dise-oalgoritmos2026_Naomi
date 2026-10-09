@@ -108,10 +108,10 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 
 | Sesión  | Tema                                         | Qué aprendí |                  Evidencia                   | Estado |
 | :-----: | :------------------------------------------- | :---------- | :------------------------------------------: | :----: |
-|   S14   | Sistemas numéricos                           |  Aprendí sistemas numericos: decimal, binario, octal y hexadecimal.            |               [ver](UA2/S14/S14-evidencia.png) | [ver](UA2/S14/S14-evidencia-exe.png)  |   ⬜   |
-|   S15   | Control de versiones con git y GitHub        |             |  [ver](UA2/S15/S15-suma-dos.png) | [ver](UA2/S15/S15-suma-dos-exe.png)               |   ⬜   |
-|   S16   | Formato de un programa en C y compilación    |             |               [ver](UA2/S16/decimal_binario.c)                |   ⬜   |
-|   S17   | Variables, constantes y entrada/salida       |             |               [ver](UA2/S17/area_rectangulo.c)                |   ⬜   |
+|   S14   | Sistemas numéricos                           |  Aprendí sistemas numericos: decimal, binario, octal y hexadecimal. |                                                                [ver](UA2/S14/S14-evidencia.png)        |   ⬜   |
+|   S15   | Control de versiones con git y GitHub        |             |      [ver](UA2/S15/S15-suma-dos.png)         |   ⬜   |
+|   S16   | Formato de un programa en C y compilación    |             |      [ver](UA2/S16/decimal_binario.c)        |   ⬜   |
+|   S17   | Variables, constantes y entrada/salida       |             |      [ver](UA2/S17/area_rectangulo.c)        |   ⬜   |
 |   S18   | Operadores, casting e if … else              |             |               [ver](UA2/S18/)                |   ⬜   |
 |   S19   | Ciclos y switch                              |             |               [ver](UA2/S19/)                |   ⬜   |
 |   S20   | Arreglos, matrices y cadenas                 |             |               [ver](UA2/S20/)                |   ⬜   |
