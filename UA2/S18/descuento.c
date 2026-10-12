@@ -13,12 +13,14 @@
     //Proceso.
     if (>= 50000) {
         descuento = compra * 0.10; 
-    else{
-         descuento <- 0;
     }
+    else if 
+    {
+        descuento <- 0;
     }
-
+    
     printf("Descuento: %.2f\n", descuento);
     printf("Total a pagar: %.2f\n", total);
     
+    return 0;
  }

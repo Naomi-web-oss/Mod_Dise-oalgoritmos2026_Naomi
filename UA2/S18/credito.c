@@ -41,4 +41,5 @@
         printf("Crédito rechazado");
     }
     
+    return 0;
  }
