@@ -12,10 +12,10 @@ int main(void){
 
     //Salidas.
     printf("Antes: ");
-    printf("a = %d", a);
-    printf("b = %d", b);
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
 
     printf("Despues: ");
-    printf("a = %d", a, "  b =  %d", b);
-    printf("b = %d", b, "  aux =  %d", aux);
+    printf("a = %d\n", a, "  b =  %d\n", b);
+    printf("b = %d\n", b, "  aux =  %d\n", aux);
 }

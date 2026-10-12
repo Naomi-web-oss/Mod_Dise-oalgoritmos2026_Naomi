@@ -20,5 +20,8 @@ int main(void){
         printf("Reprobado");
     } 
     }
+
+    //Salida.
+    printf("Nota resgitrada: %f", nota);
     return 0;
 }

@@ -10,7 +10,7 @@
     //Definir variables como Caracter.
     char respDeudas, respFiador;
     //Definir variables como Logico.
-    int capacidadPago, tieneDeudas, tieneFiador, aprobado;
+    int capacidadPago, tieneDeudas, tieneFiador, aprobado; 
 
     //Entradas y lecturas.
     printf("Salario mensual: ");
@@ -32,7 +32,7 @@
     capacidadPago = salario >=cuota * 3;
     tieneDeudas = Mayusculas(respDeudas) = "S";
     tieneFiador = Mayusculas(respFiador) = "S";
-    aprobado = capacidadPago  &&  !tieneDeudas  && (antiguedad >= 1 || tieneFiador);
+    aprobado = capacidadPago  &&  !tieneDeudas  && (antiguedad >= 1 || tieneFiador);//Corregir.
 
     if (aprobado)
     {
