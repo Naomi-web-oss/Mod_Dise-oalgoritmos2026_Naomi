@@ -12,7 +12,7 @@
 
     //Proceso.
     if (>= 50000) {
-        descuento <- compra * 0.10; 
+        descuento = compra * 0.10; 
     else{
          descuento <- 0;
     }
