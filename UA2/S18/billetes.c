@@ -11,7 +11,7 @@ int main(void){
     scanf("%d", &monto);
 
     //PROCESOS: división entera 47500 / 20000 -> cantidad = 2.
-    cantidad = resto / 20000;
+    cantidad = monto / 20000;
 
     //% es el residuo: 47500 % 20000 -> resto = 7500.
     resto = resto % 20000;
@@ -36,7 +36,7 @@ int main(void){
     resto %= 1000;
     printf("Billetes de 1000: %d\n", cantidad);// -> 0.
 
-    //Lo que quede se entrega con monedas -> en monedas 500
+    //Lo que quede se entrega con monedas -> en monedas 500.
     printf("En monedas: %d\n", resto);
 
     return 0;
