@@ -14,16 +14,16 @@
 
     //Entradas y lecturas.
     printf("Salario mensual: ");
-    scanf("%lf, &salario");
+    scanf("%lf", &salario);
 
     printf("Cuota mensual del crédito: ");
-    scanf("%lf, &cuota");
+    scanf("%lf", &cuota);
 
     printf("¿Tiene deudas atrasadas? (S/N): ");
-    scanf("%c, &respDeudas");
+    scanf("%c", &respDeudas);
 
     printf("Años de antigüedad laboral: ");
-    scanf("%d, &antiguedad");
+    scanf("%d", &antiguedad);
 
     printf("¿Tiene fiador? (S/N): ");
     scanf("%c", &respFiador);
@@ -40,6 +40,6 @@
     else 
         printf("Crédito rechazado");
     }
-    
+
     return 0;
  }

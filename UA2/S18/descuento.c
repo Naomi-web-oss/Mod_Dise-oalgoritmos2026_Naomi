@@ -8,7 +8,7 @@
 
     //Entradas y lecturas.
     printf("Monto de la compra");
-    scanf("%lf, &compra");
+    scanf("%lf", &compra);
 
     //Proceso.
     if (>= 50000) {

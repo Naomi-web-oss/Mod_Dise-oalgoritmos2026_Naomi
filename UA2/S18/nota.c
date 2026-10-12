@@ -7,7 +7,7 @@ int main(void){
 
     //Entradas y lecturas.
     printf("Nota (0 a 100): ");
-    scanf("%lf, &nota");
+    scanf("%lf", &nota);
 
     //Proceso.
     if nota < 0 || nota > 100 {

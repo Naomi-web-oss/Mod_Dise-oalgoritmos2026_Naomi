@@ -8,13 +8,13 @@ int main(void){
 
     //Entradas y lecturas.
     printf("Año: ");
-    scanf("%d, &anio");
+    scanf("%d", &anio);
 
     //Proceso.
     esBisiesto = (anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0;
     
     //Salidas.
-    printf("¿Es bisiesto?: %d\n, esBiesto");
+    printf("¿Es bisiesto?: %d\n", esBiesto);
 
     return 0;
 }
