@@ -108,12 +108,12 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 
 | Sesión  | Tema                                         | Qué aprendí |                  Evidencia                   | Estado |
 | :-----: | :------------------------------------------- | :---------- | :------------------------------------------: | :----: |
-|   S14   | Sistemas numéricos                           |  Aprendí sistemas numericos: decimal, binario, octal y hexadecimal. |                                                                [ver](UA2/S14/S14-Hola.png)             |   ⬜   |
-|   S15   | Control de versiones con git y GitHub        |             |      [ver](UA2/S15/S15-suma-dos.png)         |   ⬜   |
+|   S14   | Sistemas numéricos                           |  Aprendí sistemas numericos: decimal, binario, octal y hexadecimal. |                                                                [ver](UA2/S14/S14-Hola.png)             |   Completado   |
+|   S15   | Control de versiones con git y GitHub        |             |      [ver](UA2/S15/S15-suma-dos.png)         |   Completado  |
 |   S16   | Formato de un programa en C y compilación    |             |      [ver](UA2/S16/decimal_binario.c)        |   ⬜   |
 |   S17   | Variables, constantes y entrada/salida       |             |      [ver](UA2/S17/area_rectangulo.c)        |   ⬜   |
 |   S18   | Operadores, casting e if … else              |             |               [ver](UA2/S18/)                |   ⬜   |
-|   S19   | Ciclos y switch                              |             |               [ver](UA2/S19/)                |   ⬜   |
+|   S19   | Ciclos y switch                              |  Aprendì sobre ciclo while do while y switch.          |               [ver](UA2/S19/Caja-c%20.png)                |   ⬜   |
 |   S20   | Arreglos, matrices y cadenas                 |             |               [ver](UA2/S20/)                |   ⬜   |
 |   S21   | Funciones                                    |             |               [ver](UA2/S21/)                |   ⬜   |
 |   S22   | Paso de parámetros por valor y por dirección |             |               [ver](UA2/S22/)                |   ⬜   |
