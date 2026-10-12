@@ -112,7 +112,7 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 |   S15   | Control de versiones con git y GitHub        |             |      [ver](UA2/S15/S15-suma-dos.png)         |   Completado  |
 |   S16   | Formato de un programa en C y compilación    |             |      [ver](UA2/S16/decimal-binario-c.png)        |  Completado  |
 |   S17   | Variables, constantes y entrada/salida       |             |      [ver](UA2/S17/area_rectangulo.c)        |   Completado   |
-|   S18   | Operadores, casting e if … else              |             |               [ver](UA2/S18/promedio-c.png)                |   Completado  |
+|   S18   | Operadores, casting e if … else              |  Aprendì sobre operadores arimeticos,( %, a/b, ^ , -,)casting e inf - else           |               [ver](UA2/S18/promedio-c.png)                |   Completado  |
 |   S19   | Ciclos y switch                              |  Aprendì sobre ciclo while do while y switch.          |               [ver](UA2/S19/tablas-c.png)                |   Completado   |
 |   S20   | Arreglos, matrices y cadenas                 |             |               [ver](UA2/S20/)                |   ⬜   |
 |   S21   | Funciones                                    |             |               [ver](UA2/S21/)                |   ⬜   |
