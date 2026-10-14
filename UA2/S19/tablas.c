@@ -12,7 +12,7 @@ int main(void){
     scanf("%d", &numero);
 
     //White con centinela: repite mientras.
-    while (numero != CETINELA){
+    while (numero != CETINELA);{
         //For anidado: 10 vueltas por cada nùmero -> i = 1, 2 ..., 10.
         for ( i = 1; i <= 10; i++)
         {

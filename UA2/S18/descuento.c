@@ -14,9 +14,8 @@
     if (>= 50000) {
         descuento = compra * 0.10; 
     }
-    else if 
-    {
-        descuento <- 0;
+    else {
+        descuento = 0;
     }
     
     printf("Descuento: %.2f\n", descuento);

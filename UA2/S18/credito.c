@@ -34,12 +34,14 @@
     tieneFiador = Mayusculas(respFiador) = "S";
     aprobado = capacidadPago  &&  !tieneDeudas  && (antiguedad >= 1 || tieneFiador);//Corregir.
 
-    if (aprobado)
-    {
+    if (aprobado){
+        
         printf("Crédito aprobado");
-    else 
-        printf("Crédito rechazado");
+
+    } else {
+        
     }
+        printf("Crédito rechazado");
 
     return 0;
  }
