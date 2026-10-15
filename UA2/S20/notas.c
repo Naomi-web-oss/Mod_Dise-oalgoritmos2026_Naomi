@@ -1,4 +1,5 @@
 //notas.c - Lo trabajamos con un arreglo. Ahora las notas se guardan en este ejercicio, se guardan en el arreglo.
+//A un arreglo se le dice vector (es lo mismo).
 #include <stdio.h>
 #include <stdlib.h>
 int main(void){
