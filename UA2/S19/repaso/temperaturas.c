@@ -1,16 +1,55 @@
-// temperaturas.c - Temperaturas de una semana
-// ENUNCIADO: pedir la temperatura (grados enteros) de cada uno de los 7
-//   dias de la semana. Un dato fuera del rango -10 a 45 se rechaza y se
-//   vuelve a pedir para el mismo dia. Al final mostrar el promedio con un
-//   decimal, la temperatura maxima y cuantos dias fueron calurosos (mas
-//   de 30 grados).
-// QUE SE LOGRA: validar cada dato y resumir la semana en tres resultados.
-// COMO SE LOGRA: un for de 7 vueltas (un dia por vuelta); dentro, un
-//   do-while que repite la pregunta mientras el dato sea invalido; un
-//   acumulador para la suma, una comparacion para la maxima y un contador
-//   para los dias calurosos; el promedio se calcula con casting a float.
-// RESULTADO ESPERADO: con 28 31 50 29 33 27 30 26 -> el 50 se rechaza,
-//   Promedio: 29.1 grados, Maxima: 33 grados, Dias calurosos: 2
+
+/* __________________________________________________________________________________________________________*/
+/*|                                                                                                          |*/
+/*|                            ❀  temperaturas.c - Temperaturas de una semana                               |*/
+/*|__________________________________________________________________________________________________________|*/
+/*|    -----------                                                                                           |*/
+/*|     Enunciado: - Pedir la temperatura (grados enteros) de cada uno de los 7 dias de la semana.           |*/
+/*|    -----------                                                                                           |*/  
+/*|                 - Un dato fuera del rango -10 a 45 se rechaza y se vuelve a pedir para el mismo dia.     |*/  
+/*|                                                                                                          |*/
+/*|                 - Al final mostrar el promedio decimal.                                                  |*/   
+/*|                                                                                                          |*/ 
+/*|                 - La temperatura maxima.                                                                 |*/ 
+/*|                                                                                                          |*/   
+/*|                 - Cuántos dias fueron calurosos (más de 30 grados).                                      |*/  
+/*|                                                                                                          |*/
+/*|__________________________________________________________________________________________________________|*/ 
+/*|    ---------------                                                                                       |*/
+/*|     Que se logra:   validar cada dato y resumir la semana en tres resultados.                            |*/
+/*|    ---------------                                                                                       |*/
+/*|__________________________________________________________________________________________________________|*/ 
+/*|    -------------------                                                                                   |*/
+/*|     Datos de entrada:  DIAS 7, MINIMO -10, MAXIMA 45, temp (Temperatura), suma, i calurosos promedio.    |*/
+/*|    -------------------                                                                                   |*/
+/*|__________________________________________________________________________________________________________|*/          
+/*|    ----------                                                                                            |*/
+/*|      Proceso:    Un FOR (PARA) de 7 vueltas (un dia por vuelta) - dentro un DO WHILE (REPETIR)           |*/
+/*|    ----------                                                                                            |*/
+/*|                  (repite mientras el dato sea inválido) - ACUMULADOR (Suma) - COMPARACIÓN (Máxima)       |*/
+/*|                                                                                                          |*/
+/*|                   - CONTADOR (días calurosos) - CASTING (promedio).                                      |*/
+/*|                                                                                                          |*/
+/*|__________________________________________________________________________________________________________|*/ 
+/*|    ---------------                                                                                       |*/
+/*|     Datos de prueba:  28, 31, 50 (se rechaza y se vuelve a pedir el día 3), 29, 33, 27, 30, 26           |*/
+/*|    ---------------                                                                                       |*/
+/*|__________________________________________________________________________________________________________|*/   
+/*|    ---------                                                                                             |*/
+/*|      Salida:    Con 28 31 50 29 33 27 30 26 -> el 50 se rechaza. PROMEDIO: 29.1 grados,                  |*/
+/*|     ---------                                                                                            |*/
+/*|                 MÁXIMA: 33 grados, DÍAS CALUROSOS: 2.                                                    |*/
+/*|                                                                                                          |*/
+/*|__________________________________________________________________________________________________________|*/    
+/*|    ------------------------                                                                              |*/
+/*|      Variables y constantes: DIAS 7, MINIMO -10, MAXIMA 45, temp (Temperatura).                          |*/
+/*|    ------------------------  suma, i, calurosos, promedio.                                               |*/
+/*|                                                                                                          |*/
+/*|__________________________________________________________________________________________________________|*/    
+
+
+
+
 #include <stdio.h>                    // printf y scanf
 #define DIAS 7                        // cantidad de dias de la semana
 #define MINIMA -10                    // menor temperatura aceptada
@@ -30,10 +69,10 @@ int main(void) {
         // DO-WHILE: pide el dato y lo repite mientras este fuera de rango
         do {
             printf("Temperatura dia %d: ", i + 1);
-            scanf("%d", temp);
+            scanf("%d", &temp);
             if (temp < MINIMA || temp > MAXIMA)
                 printf("  Fuera de rango (%d a %d)\n", MINIMA, MAXIMA);
-        } while (temp >= MINIMA && temp <= MAXIMA)
+        } while (temp >= MINIMA && temp <= MAXIMA);
 
         suma = suma + temp;           // acumula -> 28, 59, 88, ...
         if (temp > maxima)            // guarda la mayor -> 33
@@ -46,5 +85,39 @@ int main(void) {
     printf("\nPromedio: %.1f grados\n", promedio);
     printf("Maxima: %d grados\n", maxima);
     printf("Dias calurosos: %d\n", calurosos);
+
     return 0;
+
+
+
+/* __________________________________________________________________________________________________________*/
+/*|                                                                                                          |*/
+/*|                                       ✿ REGISTRO DE CORRECCIONES                                        |*/
+/*|__________________________________________________________________________________________________________|*/
+/*|         ------     ---------     --------------     --------------------     ---------------------       |*/
+/*|           N.°   |    Línea    |   Tipo (C/A/L)    |    Qué estaba mal    |      Cómo lo corregí          |*/
+/*|         ------     ---------     --------------     -------------------      ---------------------       |*/
+/*|__________________________________________________________________________________________________________|*/         
+/*|                 |             |                   |                      |                               |*/
+/*|      1          |             |                   |                      |                               |*/                                                       
+/*|__________________________________________________________________________________________________________|*/  
+/*|                 |             |                   |                      |                               |*/
+/*|      2          |    33       |  A  (Advertencia) |  scanf("%d", temp);  |      scanf("%d", &temp);       |*/                                                      
+/*|__________________________________________________________________________________________________________|*/                                                        
+/*|                 |             |                   |                      |                               |*/
+/*|      3          |    36       |   C (Compilación) | } while (temp >= MINIMA && temp <= MAXIMA) |  } while (temp >= MINIMA && temp <= MAXIMA);|*/*/                                                        
+/*|__________________________________________________________________________________________________________|*/   
+/*|                 |             |                   |                      |                               |*/
+/*|       4          |             |                   |                      |                               |*/                                                     
+/*|__________________________________________________________________________________________________________|*/                                     
+/*|                 |             |                   |                      |                               |*/
+/*|       5          |             |                   |                      |                               |*/                                                       
+/*|__________________________________________________________________________________________________________|*/  
+/*|                 |             |                   |                      |                               |*/
+/*|       6          |             |                   |                      |                               |*/                                                        
+/*|__________________________________________________________________________________________________________|*/
+/*|                                                                                                          |*/
+/*|__________________________________________________________________________________________________________|*/  
+
+
 }

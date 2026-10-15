@@ -6,7 +6,7 @@ Al final se muestra una barra de asteriscos (*) con los votos del candidato.*/
 #include <stdio.h>//La librería trae printf y scanf.
 #define FIN 0 //Se define e inicializa constantes.
 
-int main(void)/*Es la función principal del programa*/{
+int main(void)/*Es la función principal del programa*/{-
     //Declara como enteros.
     int voto;       //Número que digita cada estudiante.
     int total = 0;  //Contador de votos recibidos(válidos como nulos).
@@ -14,7 +14,7 @@ int main(void)/*Es la función principal del programa*/{
     int luis = 0;
     int sofia = 0;
     int nulos = 0;  //contador de votos nulos.
-    int c;        //Candidato que dibuja el for externo 1 a 3.
+    int c;        //Candidato que dibuja el for externo 1 a 3.++
     int i;       //Contador de for interno: una vuelta por cada asterisco.
     int cantidad;    //Votos por candidato.
     int mayor;   //Mayor cantidad de votos por candidatos.
