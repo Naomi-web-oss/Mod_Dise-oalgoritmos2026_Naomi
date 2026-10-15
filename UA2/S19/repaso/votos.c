@@ -23,7 +23,7 @@ int main(void)/*Es la función principal del programa*/{-
     printf("========= Eleccion de representante =========\n");//Printf se utiliza sin tildes ni ñs.
     printf(" 1 Ana   2 Luis   3 Sofia  (0 cierra)\n\n");
 
-    //Lecturas previas.
+    //Lecturas previas. //Sin esta primera lectura el programa guarda basura en memoria, y el bucle genera datos erròneos.
     //printf("voto: ");
     //scanf("%d, &voto");
 
@@ -109,6 +109,8 @@ printf("Gana Luis con %d votos\n, mayor");
 
 else if (sofia == mayor)
 printf("Gana Sofia con %d votos\n, mayor");
+
+system("pause");
 
 return 0;
 }
