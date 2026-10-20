@@ -1,0 +1,20 @@
+//presentación.c - tarjeta de presentación del curso.
+//Autor:    Naomi Cantillo.
+
+#include <stdio.h>//Libreria incluye la biblioteca de E/S. (prinf y scanf).
+
+int main(void){//1. Int main = Inicia la función principal.
+     /*2. Se escribe void dentro → se declara expresamente que NO hay parámetros.*/
+/*3.Las llaves { }: Todo lo que esté dentro de estas llaves  es el cuerpo de la función, es decir, las instrucciones que el 
+programa ejecutará.*/
+    printf("  =============================================== \n");
+    printf("|| Instituto Nacional De Aprendizaje            ||\n");
+    printf("|| Modulo: CSTI12010 Diseño de algoritmos       ||\n");
+    printf("|| Unidad 2: Programacion estructurada          ||\n");
+    printf("|| \tSesión 16                                  ||\n"); // \t Muestra texto con sangría.
+    printf("|| Lenguaje \"C\" | Compilator: gcc             ||\n");//Muestra comillas.
+    printf("|| \tEstudiante: Naomi Cantillo                 ||\n");
+    printf("  =============================================== \n");
+
+    return 0;//Termina sin errores.Devuelve 0 al sistema operativo.
+}//Cierra main. Toda llave abierta se cierra.

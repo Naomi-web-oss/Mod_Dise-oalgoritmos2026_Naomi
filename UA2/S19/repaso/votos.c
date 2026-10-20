@@ -6,7 +6,10 @@ Al final se muestra una barra de asteriscos (*) con los votos del candidato.*/
 #include <stdio.h>//La librería trae printf y scanf.
 #define FIN 0 //Se define e inicializa constantes.
 
-int main(void)/*Es la función principal del programa*/{-
+int main(void){//1. Int main = Inicia la función principal.
+     /*2. Se escribe void dentro → se declara expresamente que NO hay parámetros.*/
+/*3.Las llaves { }: Todo lo que esté dentro de estas llaves  es el cuerpo de la función, es decir, las instrucciones que el 
+programa ejecutará.*/
     //Declara como enteros.
     int voto;       //Número que digita cada estudiante.
     int total = 0;  //Contador de votos recibidos(válidos como nulos).
@@ -54,7 +57,7 @@ int main(void)/*Es la función principal del programa*/{-
         }
          //Nueva lectura: sin la nueva lectura el voto no cambia y el while no termina.
         printf("voto: ");
-        scanf("%d, &voto");
+        scanf("%d", &voto);
         }
         printf("\nVotos recibidos: %d\n",total);
 
