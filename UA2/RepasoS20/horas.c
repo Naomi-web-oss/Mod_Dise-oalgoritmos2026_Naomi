@@ -1,172 +1,174 @@
-//horas.c - Horas de estudio a la semana
-/*ENUNCIADO: Registrar las horas de estudio de tres estudiantes de lunes a jueves
-se digite el nombre y las horas de cada dia.
-Mostrar una tabla con el total de cada estudiante, quien estudio mas, el dia con mas horas y buscar a una
- persona del grupo por su nombre*/
+//horas.c  - Horas de estudio
+/*ENUNCIADO: Registrar las horas de estudio de 3 estudiantes de lunes a jueves
+Se digite el nombre y las horas de estudio de cada dia
+Mostrar una tabla con el total de cada estudiante, quien estudio mas, el dia con mas horas y buscar a una 
+persona del grupo por su nombre*/
 
- #include <stdio.h>
- #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
- //Definir constantes 
- #define EST 3 //FILAS de la matriz
- #define DIAS 4 //COLUMNAS
+//Definir constantes
+#define EST 3 //FILAS de la matriz
+#define DIAS 4 //COLUMNAS
 
- int main(void){
-    //ARREGLO DE CADENAS para los tres nombres.
-    char nombres[EST][15]; //DE LOS 15 CARACTERES 14 SON PARA EL NOMBRE Y 1 para '/0'
+int main(void){
+    //ARREGLO DE CADENAS para los 3 nombres.
+    char nombres[EST][15]; //DE LOS 15 CARACTERES 14 SON PARA EL NOMBRE y 1 para '\0'
 
-    //MATRIZ de horas: 3 filas para estudiantes y 4 columnas para los dias
+    //MATRIZ de horas: 3 filas para estudiantes y  4 columnas 
     int horas[EST][DIAS];
 
     //ARREGLO DE CADENAS: CON LOS NOMBRES CORTOS DE LOS DIAS
     char dias[DIAS][4] = {"Lun", "Mar", "Mie", "Jue"};
-    //Se crean los indices de fila y columna
+
+    //Se crearn los indices de fila y columna
     int e;
     int d;
-
+    
     //ARREGLO: total por estudiante. total[e] es la suma de la fila e. Guardar y buscar al mayor
     int total[EST];
 
     //POSICION: de quien estudio mas 
     int mejor;
 
-    //ACUMULADOR de columna (horas del grupo en un dia)
-
-    int sumaDia;
-
-    //Suma mayor de dia 
+    //ACUMULADOR de columna (horas del grupo por dia)
+    int sumaDia; 
+ 
+    //suma mayor de dia 
     int sumaMayor;
-
-    //POSICION: dia con mas horas 
+    
+    //POSICION: dia con mas horas
     int diaMejor;
 
-    //Cadena con el nombre a buscar 
-    char buscado[15];
+    //cadena con el nombre a buscar 
+    char buscado[15]; 
 
     //POSICION donde aparece el nombre buscado
     int encontrado;
 
-    // ======== LECTURA con los for anidados =========
-    //ciclo externo: una vuelta por estudiante (fila).
+    // ===== LECTURA con los for anidados ======
+    //ciclo externo: una vuelta por estudiante (fila)
 
-    for(e = 0; e < EST; e++){
+    for (e = 0; e < EST; e++){
         //pedimos nombre del estudiante 
         printf("Nombre del estudiante %d: ", e + 1);
-        //leer una palabra en la fila de nombres 
+        //leer una palabra en la fila de nombres
         scanf("%14s", nombres[e]);
 
         //ciclo interno: una vuelta por dia (columna) de la fila
         for (d = 0; d < DIAS; d++){
             //pedir las horas del dia 
-            printf(" Horas del %s ", dias[d]);
+            printf(" Horas del %s: ", dias[d]);
             //leer un entero en la celda
             scanf("%d", &horas[e][d]);
+
         }
     }
 
-    //==================== TABLA ==========================
+    // ============== TABLA =============
     //Con encabezado con la palabra "Nombre".
-    printf("\n%-8s", "Nombre");
+    printf(" \n%-8s", "Nombre");
 
-    //FOR para recorrer los dias para los encabezados 
+    //FOR para recorrer los dias para el encabezado
     for (d = 0; d < DIAS; d++){
-    //mostrar cada dia
+
+     //mostrar cada dia 
     printf("%5s", dias[d]);
+
+    }
 
     //titulo de la ultima columna y salto de linea
     printf("%7s\n", "Total");
 
     //una fila de la tabla por estudiante
-    for(e = 0; e < EST; e++){
+    for (e = 0; e < EST; e++){
         //reinicia el total de la fila e 
         total[e] = 0;
         //Mostrar el nombre 
-        printf("%8-s", nombres[e]);
+        printf("%-8s", nombres[e]);
 
         //recorre la columna de la fila e
-        for (e = 0; e < DIAS; d++){
+        for (d = 0; d < DIAS; d++){
             //mostrar las horas de la celda 
             printf("%5d", horas[e][d]);
             //sumar la celda al total
             total[e] += horas[e][d];
+    
         }
-         //mostrar el total 
+         //mostrar el total
             printf("%7d\n", total[e]);
     }
-    }
-    
 
-    //===========MAYOR del arreglo total==========
+    //=======MAYOR del arreglo total =========
     //supone que el primero estudio mas
     mejor = 0;
-    //recorrer los demas estudiantes (posiciones 1 y 2).
-    for (e = 1; e < EST; e++){
-        //comparar totales
-        if(total[e] > total[mejor])
-        mejor = e;
-
-        //mostrar quien estudio mas
+    //recorre los demas estudiantes (posiciones 1 y 2).
+    for (e = 1; e < EST; e++ ){
+        //comparar totales 
+        if (total[e] > total[mejor]){
+            mejor = e;
+        }
+    }
+        //mostrar quien estudio mas 
         printf("\nEstudio mas: %s (%d horas)\n", nombres[mejor], total[mejor]);
 
-        //==========Dia con mas horas (suma por columna)==========
-        //mayor suma inicial en 0
+        //========Dia con mas horas (suma por columna)
+        //mayor suma inicial en 0 
         sumaMayor = 0;
-        diaMejor = 0;
+        diaMejor = 0; 
 
-        //recorrer las columnas 
-        for(d = 0; d < DIAS; d++){
-            //REINICIAMOS EL ACUMULADOR 
+        //recorrer columnas 
+        for (d = 0; d < DIAS; d++){
+            //REINICIAMOS EL ACUMULADOR
             sumaDia = 0;
-
+        
             //recorrer filas de esa columna
-            for(e = 0; e < EST; e++){
+            for (e = 0; e < EST; e++){
                 //suma de celda
                 sumaDia += horas[e][d];
+            }
+                //comparar la suma del dia con la mayor 
 
-                //comparar la suma del dia con la mayor
-                if(sumaDia > sumaMayor) {
-                    //guardar la nueva mayor
+                if (sumaDia > sumaMayor) {
+                    //guardar la nueva mayor 
                     sumaMayor = sumaDia;
-                    //guardar la posicion 
+                    //guarda la posicion
                     diaMejor = d;
+
+                //mostrar el dia con mas horas 
+                    printf("Dia con mas horas: %s (%d horas)\n", dias[diaMejor], sumaMayor);
                 }
             }
+
+    //================Busqueda por nombre =============
+
+    //pedir nombre a buscar 
+    printf("\nBuscar estudiante: ");
+    //lee la palabra 
+    scanf("%14s", buscado);
+    //marca que todavia no aparece
+    encontrado = -1;// si el for no encuentra el nombre sigue en -1
+    // recorrer los nombres
+    for (e = 0; e < EST; e++){
+        //compara las dos cadenas
+        //strcmp devuelve 0 si son iguales letra por letra
+        if (strcmp(buscado, nombres[e]) == 0){
+          encontrado = e; 
         }
-
-        //mostrar el dia con mas horas
-        printf("Dia con mas horas: %s (%d horas)\n", dias[diaMejor], sumaMayor);
-
-        //===============Busqueda por nombre ==============
-
-        //pedir nombre a buscar
-        printf("\nBuscar estudiante: ");
-        //lee la palabra
-        scanf("%14s", buscado);
-        //marca que todavia no aparece
-        encontrado = -1; // si el for no encuentra el nombre sigue en -1
-        // recorre los nombres
-        for (e = 0; e > EST; e++){
-            //comparar las dos cadenas
-            //strcmp devuelve 0 si son iguales letra por letra
-            if(strcmp(buscado, nombres[e]) == 0)
-            encontrado = e;
-
-            //revisa si encontro 
-            if (encontrado >= 0)
-            //muestra el total encontrado
+        
+    }
+        //revisa si encontro
+        if (encontrado >= 0){
+            //muestra el total encontrado 
             printf("%s estudio %d horas\n", nombres[encontrado], total[encontrado]);
-            //en caso de que no aparezca
-
-            else{
-                printf("%s no esta en la lista\n", buscado);
-            }
         }
-        }
+        //en caso que no aparece
 
-        //finalizamos 
-        return 0;
-
- }
-
- 
-
+        else {
+             printf("%s no esta en la lista\n", buscado);
+        }  
+     
+    
+    //finalizamos
+    return 0;
+}
