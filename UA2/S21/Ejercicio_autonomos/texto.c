@@ -7,31 +7,29 @@
 int esVocal(int c);
 
 int main(void) {  
-    int limpiar;
     int digitos = 0;
     int letras = 0;
     int c;
     int i;
 
         printf("Frase: ");
-        while ((limpiar = getchar()) != '\n' &&
-                    limpiar != EOF) {}
-        fgets(c, sizeof(c), stdin);
-         c[strlen(c)] = '\0'; 
+        c = getchar();
 
        for (i = 0; i < c; i++)
        {
       
       if (isalpha(c)) { 
-               letras++
+               letras++;
            } 
       if (isdigit (c))
        {
-         digitos++
+         digitos++;
        }
 
        putchar(toupper(c));
       
       }
+
+      printf("Frase: %d", c);
       return 0; 
   } 
