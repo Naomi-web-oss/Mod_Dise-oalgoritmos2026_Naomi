@@ -5,9 +5,9 @@ Mostrar: una tabla con cliente, las entradas y el total de cada compra, total ve
 
 //Definir constantes.
 #define MAX_COMPRAS 10
-#define PRECIO_COMPRAS 3500
-#define PRECIO_NINO 2500
-#define PRECIO_MAYOR 2000
+#define PRECIO_COMPRAS 3500.0
+#define PRECIO_NINO 2500.0
+#define PRECIO_MAYOR 2000.0
 #define MIN_DESCUENTO 5
 #define TAZA_DESCUENTO 0.10
 
@@ -21,7 +21,7 @@ int main(void){
     //Definir arreglos y variables.
     char clientes[MAX_COMPRAS][15];//NOMBRES DE LOS CLIENTE DE LA COMPRA.
     int cantidades[MAX_COMPRAS];//CANTIDAD DE COMPRAS POSIBLES (10).
-    double totales{MAX_COMPRAS};//Total de cada compra.
+    double totales[MAX_COMPRAS];//Total de cada compra.
     //Cantidad de compras, indice y el tipo de entrada.
     int n, i, tipo;
     //Mostrar cantidad de compras.
@@ -53,15 +53,15 @@ int main(void){
     }
     
     //Calcular el resumen en una pasada.
-    resumir(calcularTotal, totales, n, &totalvendido, &posmayor);
+    resumir(cantidades, totales, n, &totalvendido, &posmayor, &conDescuento);
 
     //Encabezado de la tabla.
-    printf("\n%-12s%9d%12.2f\n", clientes[i], cantidades[i], totales[i]);
+    printf("\n%-12s%9s%12.2s\n", "cliente", "entradas", "totales");
     //Recorrer las compras.
     for (i = 0; i < n; i++)
     {
         //Mostrar fila.
-        printf("%-12s%9d%12.2f\n", clientes[i], cantidades[i], totales[i]);
+        printf("%-12s%9s%12.2f\n", clientes[i], cantidades[i], totales[i]);
         //Total vendido.
         printf("Total vendido: %12.2f\n", totalvendido);
         //Compra mayor.
@@ -89,7 +89,7 @@ int main(void){
 
     //Definicion precioEntrada.
     double precioEntrada(int tipo)
-    switch (tipo)
+    switch(tipo)
     {
     case 1:
         return PRECIO_GENERAL;//return termina la funcion no hace falta el break.
@@ -115,7 +115,7 @@ int main(void){
     }
 
     //Definir resumir.
-    void resumir(const cant[], const double tot[], int n, double *total, int *posMayor, int *conDescuento)
+    void resumir(const int cant[], const double tot[], int n, double *total, int *posMayor, int *conDescuento){
     int i;
     //Iniciamos los tres resultados en la memoria ram.
     *total = 0;
@@ -140,5 +140,5 @@ int main(void){
         
     }
     
-
+    }
 
