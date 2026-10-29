@@ -115,8 +115,8 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 |   S18   | Operadores, casting e if … else              |  Aprendì sobre operadores arimeticos,( %, a/b, ^ , -,)casting e inf - else           |               [ver](UA2/S18/promedio-c.png)                |   Completado  |
 |   S19   | Ciclos y switch                              |  Aprendì sobre ciclo while do while y switch.          |               [ver](UA2/S19/tablas-c.png)                |   Completado   |
 |   S20   | Arreglos, matrices y cadenas                 |   Aprendì sobre arreglos, matrices y funciones de cadenas (strcpy, strcat, strlen y strcmp)         |               [ver](UA2/S20/notas-c-arreglos.png)                |   Completado   |
-|   S21   | Funciones                                    |             |               [ver](UA2/S21/)                |   ⬜   |
-|   S22   | Paso de parámetros por valor y por dirección |             |               [ver](UA2/S22/)                |   ⬜   |
+|   S21   | Funciones                                    |             |               [ver](UA2/S21/Evidencia/iva-imagen.png)                |   ⬜   |
+|   S22   | Paso de parámetros por valor y por dirección |             |               [ver](UA2/S22/Evidencia/parametros-imagen.png)                |   ⬜   |
 | S23–S24 | **Actividad de comprobación 2**              |             | [ver](actividades/A2_Mi_primera_aplicacion/) |   ⬜   |
 
 </details>
