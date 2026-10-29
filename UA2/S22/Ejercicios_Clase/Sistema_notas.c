@@ -26,6 +26,7 @@ int main(void){
     //Resultado de las estadisticas.
     double promedio, mayor, menor;
 
+
     //Ciclo del menu para repetir hasta 0.
     do{
         //Mostrar el menu.
