@@ -1,0 +1,3 @@
+//Una cooperativa eléctrica emite recibos. De cada recibo se digita el número de medidor (1000 a 9999), el tipo de cliente (1 Residencial, 2 Comercial) y el consumo del mes en kWh (0 a 3000); un dato inválido se vuelve a pedir. Residencial: los primeros 200 kWh a ₡80 cada uno, de 201 a 400 a ₡110 y los que pasan de 400 a ₡150. Comercial: ₡130 por kWh más un cargo fijo de ₡3000. 
+//A todos se les suma alumbrado público: 2 % del monto de energía. Después de cada recibo se pregunta si hay otro (S/N).
+// Al final se muestra cuántos recibos se emitieron, el total facturado y el medidor con el recibo mayor. 
