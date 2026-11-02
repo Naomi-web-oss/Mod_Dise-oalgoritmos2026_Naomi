@@ -3,14 +3,19 @@
 //El programa muestra el vuelto y cuántos billetes o monedas de cada denominación entregar, empezando por la mayor (20 000, 10 000, 5000, 2000, 1000, 500, 100, 50, 25, 10 y 5); solo se muestran las que se usan. Si sobran colones que no se pueden entregar (menos de 5), se indica.
 //Al final se muestra la cantidad total de piezas. Después de cada compra se pregunta si hay otra (S/N). 
 
+//Prototipos.
+int leerEntero(const char mensaje[], int minimo, int maximo); 
+char leerSN(const char mensaje[])
+int cuantas(int *resto, int denominacion); 
+
 #include <stdio.h>
 int main(void){
     //Definir variables.
     int vuelto, total_compra, monto_pagado, total_piezas;
     double monedas,billetes;
-    char 'S';
-    char 'N';
-
+    char letra ='S';
+    char letra2 ='N';
+    const char 
 //Entradas y lecturas.
 do
 {
@@ -23,6 +28,11 @@ do
     printf("Ingrese el monto pagado:");
     scanf("%d", &monto_pagado);
 } while (monto_pagado < total_compra);
+
+
+//Mostrar Vuelto
+//Cantidad de billetes y monedas de cada denominacion entregar.
+//Cantidad total de piezas.
 
 
 }
